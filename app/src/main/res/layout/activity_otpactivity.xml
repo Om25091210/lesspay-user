@@ -1,0 +1,700 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/green"
+        tools:context=".Activity.MainActivity">
+
+        <ImageView
+            android:id="@+id/imageView15"
+            android:layout_width="258dp"
+            android:layout_height="149dp"
+            android:src="@drawable/ic_ellipse_3"
+            app:layout_constraintEnd_toEndOf="@+id/imageView11"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/backicon"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="150dp"
+            android:background="@drawable/curvebacky">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <TextView
+                        android:id="@+id/textView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="20dp"
+                        android:fontFamily="@font/plusjakartadisplaybold"
+                        android:text="@string/enterVerificationNo"
+                        android:textColor="@color/gastos_Black"
+                        android:textSize="18sp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/textMob"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/plusjakartadisplaymedium"
+                        android:text="@string/proceed"
+                        android:textColor="@color/gastos_Grey"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toStartOf="@+id/textView"
+                        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:orientation="horizontal">
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:id="@+id/constraintLayout2"
+                            android:layout_width="50dp"
+                            android:layout_height="60dp"
+                            android:layout_marginTop="30dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/edittextbacky"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.261"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/textView2">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <EditText
+                                    android:id="@+id/edt1"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:background="@android:color/transparent"
+                                    android:fontFamily="@font/plusjakartatextregular"
+                                    android:gravity="center"
+                                    android:maxLength="1"
+                                    android:padding="5dp"
+                                    android:textSize="18sp"
+                                    android:inputType="number"
+                                    app:layout_constraintBottom_toBottomOf="parent"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintHorizontal_bias="0.063"
+                                    app:layout_constraintStart_toEndOf="@+id/imageView2"
+                                    app:layout_constraintTop_toTopOf="parent" />
+                            </LinearLayout>
+
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="50dp"
+                            android:layout_height="60dp"
+                            android:layout_marginTop="30dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_weight="1"
+
+                            android:background="@drawable/edittextbacky"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.261"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/textView2">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <EditText
+                                    android:id="@+id/edt2"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:background="@android:color/transparent"
+                                    android:inputType="number"
+                                    android:fontFamily="@font/plusjakartatextregular"
+                                    android:gravity="center"
+                                    android:maxLength="1"
+                                    android:padding="5dp"
+                                    android:textSize="18sp"
+                                    app:layout_constraintBottom_toBottomOf="parent"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintHorizontal_bias="0.063"
+                                    app:layout_constraintStart_toEndOf="@+id/imageView2"
+                                    app:layout_constraintTop_toTopOf="parent" />
+                            </LinearLayout>
+
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="50dp"
+                            android:layout_height="60dp"
+                            android:layout_marginTop="30dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/edittextbacky"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.261"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/textView2">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <EditText
+                                    android:id="@+id/edt3"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:background="@android:color/transparent"
+                                    android:fontFamily="@font/plusjakartatextregular"
+                                    android:gravity="center"
+                                    android:maxLength="1"
+                                    android:inputType="number"
+                                    android:padding="5dp"
+                                    android:textSize="18sp"
+                                    app:layout_constraintBottom_toBottomOf="parent"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintHorizontal_bias="0.063"
+                                    app:layout_constraintStart_toEndOf="@+id/imageView2"
+                                    app:layout_constraintTop_toTopOf="parent" />
+                            </LinearLayout>
+
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="50dp"
+                            android:layout_height="60dp"
+                            android:layout_marginTop="30dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/edittextbacky"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.261"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/textView2">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <EditText
+                                    android:id="@+id/edt4"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:background="@android:color/transparent"
+                                    android:fontFamily="@font/plusjakartatextregular"
+                                    android:gravity="center"
+                                    android:maxLength="1"
+                                    android:inputType="number"
+                                    android:padding="5dp"
+                                    android:textSize="18sp"
+                                    app:layout_constraintBottom_toBottomOf="parent"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintHorizontal_bias="0.063"
+                                    app:layout_constraintStart_toEndOf="@+id/imageView2"
+                                    app:layout_constraintTop_toTopOf="parent" />
+                            </LinearLayout>
+
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="50dp"
+                            android:layout_height="60dp"
+                            android:layout_marginTop="30dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/edittextbacky"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.261"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/textView2">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <EditText
+                                    android:id="@+id/edt5"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:background="@android:color/transparent"
+                                    android:fontFamily="@font/plusjakartatextregular"
+                                    android:gravity="center"
+                                    android:maxLength="1"
+                                    android:inputType="number"
+                                    android:padding="5dp"
+                                    android:textSize="18sp"
+                                    app:layout_constraintBottom_toBottomOf="parent"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintHorizontal_bias="0.063"
+                                    app:layout_constraintStart_toEndOf="@+id/imageView2"
+                                    app:layout_constraintTop_toTopOf="parent" />
+                            </LinearLayout>
+
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="50dp"
+                            android:layout_height="60dp"
+                            android:layout_marginTop="30dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/edittextbacky"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.261"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/textView2">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <EditText
+                                    android:id="@+id/edt6"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:background="@android:color/transparent"
+                                    android:fontFamily="@font/plusjakartatextregular"
+                                    android:gravity="center"
+                                    android:maxLength="1"
+                                    android:padding="5dp"
+                                    android:inputType="number"
+                                    android:textSize="18sp"
+                                    app:layout_constraintBottom_toBottomOf="parent"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintHorizontal_bias="0.063"
+                                    app:layout_constraintStart_toEndOf="@+id/imageView2"
+                                    app:layout_constraintTop_toTopOf="parent" />
+                            </LinearLayout>
+
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/timer"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="15dp"
+                            android:fontFamily="@font/plusjakartatextregular"
+                            android:text="dsdsd"
+                            android:textAlignment="center"
+                            android:textColor="@color/gastos_Grey" />
+                        <TextView
+                            android:id="@+id/resend"
+                            android:visibility="gone"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="15dp"
+                            android:fontFamily="@font/plusjakartatextregular"
+                            android:text="Resend OTP"
+                            android:gravity="end"
+                            android:paddingEnd="10dp"
+                            android:textColor="@color/gastos_Grey" />
+
+
+                        <com.google.android.material.progressindicator.CircularProgressIndicator
+                            android:id="@+id/optLoader"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:elevation="100dp"
+                            android:indeterminate="true"
+                            android:visibility="gone"
+                            android:layout_gravity="center"
+                            app:indicatorColor="@color/white"
+                            app:indicatorDirectionCircular="clockwise"
+                            app:indicatorSize="40dp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:trackColor="@color/green"
+                            app:trackThickness="6dp"/>
+                    </LinearLayout>
+
+                    <!--                        <androidx.constraintlayout.widget.ConstraintLayout-->
+                    <!--                            android:layout_width="match_parent"-->
+                    <!--                            android:layout_height="wrap_content"-->
+                    <!--                            android:padding="10dp"-->
+                    <!--                            app:layout_constraintEnd_toEndOf="parent"-->
+                    <!--                            app:layout_constraintHorizontal_bias="1.0"-->
+                    <!--                            app:layout_constraintStart_toStartOf="parent"-->
+                    <!--                            app:layout_constraintTop_toBottomOf="@+id/constraintLayout2">-->
+
+                    <!--                            <LinearLayout-->
+                    <!--                                android:layout_marginTop="50dp"-->
+                    <!--                                android:layout_width="match_parent"-->
+                    <!--                                android:layout_height="0dp"-->
+                    <!--                                android:layout_weight="7"-->
+                    <!--                                android:orientation="vertical"-->
+                    <!--                                android:weightSum="4"-->
+                    <!--                                app:layout_constraintEnd_toEndOf="parent"-->
+                    <!--                                app:layout_constraintStart_toStartOf="parent"-->
+                    <!--                                app:layout_constraintTop_toTopOf="parent">-->
+
+                    <!--                                <LinearLayout-->
+                    <!--                                    android:layout_width="match_parent"-->
+                    <!--                                    android:layout_height="0dp"-->
+                    <!--                                    android:layout_weight="1"-->
+                    <!--                                    android:orientation="horizontal"-->
+                    <!--                                    android:weightSum="3">-->
+
+                    <!--                                    <Button-->
+
+                    <!--                                        android:id="@+id/btnOne"-->
+                    <!--                                        android:background="@android:color/transparent"-->
+                    <!--                                        android:layout_width="0dp"-->
+                    <!--                                        android:layout_height="match_parent"-->
+                    <!--                                        android:layout_margin="1dp"-->
+                    <!--                                        android:layout_weight="1"-->
+                    <!--                                        android:backgroundTint="@color/white"-->
+                    <!--                                        android:onClick="buttonClickEvent"-->
+                    <!--                                        android:text="1"-->
+                    <!--                                        android:textColor="@color/black"-->
+                    <!--                                        android:textSize="30sp" />-->
+
+                    <!--                                    <Button-->
+                    <!--                                        android:background="@android:color/transparent"-->
+                    <!--                                        android:id="@+id/btnTwo"-->
+                    <!--                                        android:layout_width="0dp"-->
+                    <!--                                        android:layout_height="match_parent"-->
+
+                    <!--                                        android:layout_margin="1dp"-->
+                    <!--                                        android:layout_weight="1"-->
+                    <!--                                        android:backgroundTint="@color/white"-->
+                    <!--                                        android:onClick="buttonClickEvent"-->
+                    <!--                                        android:text="2"-->
+                    <!--                                        android:textColor="@color/black"-->
+                    <!--                                        android:textSize="30sp" />-->
+
+                    <!--                                    <Button-->
+                    <!--                                        android:id="@+id/btnThree"-->
+                    <!--                                        android:layout_width="0dp"-->
+                    <!--                                        android:layout_height="match_parent"-->
+                    <!--                                        android:layout_margin="1dp"-->
+                    <!--                                        android:background="@android:color/transparent"-->
+                    <!--                                        android:layout_weight="1"-->
+                    <!--                                        android:backgroundTint="@color/white"-->
+                    <!--                                        android:onClick="buttonClickEvent"-->
+                    <!--                                        android:text="3"-->
+                    <!--                                        android:textColor="@color/black"-->
+                    <!--                                        android:textSize="30sp" />-->
+                    <!--                                </LinearLayout>-->
+
+                    <!--                                <LinearLayout-->
+                    <!--                                    android:layout_width="match_parent"-->
+                    <!--                                    android:layout_height="0dp"-->
+                    <!--                                    android:layout_weight="1"-->
+                    <!--                                    android:orientation="horizontal"-->
+                    <!--                                    android:weightSum="3">-->
+
+                    <!--                                    <Button-->
+                    <!--                                        android:id="@+id/btnFour"-->
+                    <!--                                        android:layout_width="0dp"-->
+                    <!--                                        android:layout_height="match_parent"-->
+                    <!--                                        android:background="@android:color/transparent"-->
+
+                    <!--                                        android:layout_margin="1dp"-->
+                    <!--                                        android:layout_weight="1"-->
+                    <!--                                        android:backgroundTint="@color/white"-->
+                    <!--                                        android:onClick="buttonClickEvent"-->
+                    <!--                                        android:text="4"-->
+                    <!--                                        android:textColor="@color/black"-->
+                    <!--                                        android:textSize="30sp" />-->
+
+                    <!--                                    <Button-->
+                    <!--                                        android:background="@android:color/transparent"-->
+
+                    <!--                                        android:id="@+id/btnFive"-->
+                    <!--                                        android:layout_width="0dp"-->
+                    <!--                                        android:layout_height="match_parent"-->
+                    <!--                                        android:layout_margin="1dp"-->
+                    <!--                                        android:layout_weight="1"-->
+                    <!--                                        android:backgroundTint="@color/white"-->
+                    <!--                                        android:onClick="buttonClickEvent"-->
+                    <!--                                        android:text="5"-->
+                    <!--                                        android:textColor="@color/black"-->
+                    <!--                                        android:textSize="30sp" />-->
+
+                    <!--                                    <Button-->
+                    <!--                                        android:background="@android:color/transparent"-->
+
+                    <!--                                        android:id="@+id/btnSix"-->
+                    <!--                                        android:layout_width="0dp"-->
+                    <!--                                        android:layout_height="match_parent"-->
+                    <!--                                        android:layout_margin="1dp"-->
+                    <!--                                        android:layout_weight="1"-->
+                    <!--                                        android:backgroundTint="@color/white"-->
+                    <!--                                        android:onClick="buttonClickEvent"-->
+                    <!--                                        android:text="6"-->
+                    <!--                                        android:textColor="@color/black"-->
+                    <!--                                        android:textSize="30sp" />-->
+                    <!--                                </LinearLayout>-->
+
+                    <!--                                <LinearLayout-->
+                    <!--                                    android:layout_width="match_parent"-->
+                    <!--                                    android:layout_height="0dp"-->
+                    <!--                                    android:layout_weight="1"-->
+                    <!--                                    android:orientation="horizontal"-->
+                    <!--                                    android:weightSum="3">-->
+
+                    <!--                                    <Button-->
+                    <!--                                        android:background="@android:color/transparent"-->
+
+                    <!--                                        android:id="@+id/btnSeven"-->
+                    <!--                                        android:layout_width="0dp"-->
+                    <!--                                        android:layout_height="match_parent"-->
+                    <!--                                        android:layout_margin="1dp"-->
+                    <!--                                        android:layout_weight="1"-->
+                    <!--                                        android:backgroundTint="@color/white"-->
+                    <!--                                        android:onClick="buttonClickEvent"-->
+                    <!--                                        android:text="7"-->
+                    <!--                                        android:textColor="@color/black"-->
+                    <!--                                        android:textSize="30sp" />-->
+
+                    <!--                                    <Button-->
+                    <!--                                        android:background="@android:color/transparent"-->
+
+                    <!--                                        android:id="@+id/btnEight"-->
+                    <!--                                        android:layout_width="0dp"-->
+                    <!--                                        android:layout_height="match_parent"-->
+                    <!--                                        android:layout_margin="1dp"-->
+                    <!--                                        android:layout_weight="1"-->
+                    <!--                                        android:backgroundTint="@color/white"-->
+                    <!--                                        android:onClick="buttonClickEvent"-->
+                    <!--                                        android:text="8"-->
+                    <!--                                        android:textColor="@color/black"-->
+                    <!--                                        android:textSize="30sp" />-->
+
+                    <!--                                    <Button-->
+                    <!--                                        android:background="@android:color/transparent"-->
+
+                    <!--                                        android:id="@+id/btnNine"-->
+                    <!--                                        android:layout_width="0dp"-->
+                    <!--                                        android:layout_height="match_parent"-->
+                    <!--                                        android:layout_margin="1dp"-->
+                    <!--                                        android:layout_weight="1"-->
+                    <!--                                        android:backgroundTint="@color/white"-->
+                    <!--                                        android:onClick="buttonClickEvent"-->
+                    <!--                                        android:text="9"-->
+                    <!--                                        android:textColor="@color/black"-->
+                    <!--                                        android:textSize="30sp" />-->
+                    <!--                                </LinearLayout>-->
+
+                    <!--                                <LinearLayout-->
+                    <!--                                    android:layout_width="match_parent"-->
+                    <!--                                    android:layout_height="0dp"-->
+                    <!--                                    android:layout_weight="1"-->
+                    <!--                                    android:orientation="horizontal"-->
+                    <!--                                    android:weightSum="3">-->
+
+                    <!--                                    <Button-->
+                    <!--                                        android:id="@+id/btnAterisk"-->
+                    <!--                                        android:layout_width="0dp"-->
+                    <!--                                        android:layout_height="match_parent"-->
+                    <!--                                        android:layout_margin="1dp"-->
+                    <!--                                        android:layout_weight="1"-->
+                    <!--                                        android:backgroundTint="#ECEFF1"-->
+                    <!--                                        android:onClick="buttonClickEvent"-->
+                    <!--                                        android:text="10"-->
+                    <!--                                        android:textColor="@color/black"-->
+                    <!--                                        android:textSize="30sp"-->
+                    <!--                                        android:visibility="invisible" />-->
+
+                    <!--                                    <Button-->
+                    <!--                                        android:background="@android:color/transparent"-->
+                    <!--                                        android:id="@+id/btnZero"-->
+                    <!--                                        android:layout_width="0dp"-->
+                    <!--                                        android:layout_height="match_parent"-->
+                    <!--                                        android:layout_margin="1dp"-->
+                    <!--                                        android:layout_weight="1"-->
+                    <!--                                        android:backgroundTint="@color/white"-->
+                    <!--                                        android:onClick="buttonClickEvent"-->
+                    <!--                                        android:text="0"-->
+                    <!--                                        android:textColor="@color/black"-->
+                    <!--                                        android:textSize="30sp" />-->
+
+
+                    <!--                                    <androidx.constraintlayout.widget.ConstraintLayout-->
+
+                    <!--                                        android:layout_width="0dp"-->
+                    <!--                                        android:layout_height="match_parent"-->
+                    <!--                                        android:layout_weight="1">-->
+
+                    <!--                                        <ImageView-->
+                    <!--                                            android:id="@+id/btndel"-->
+                    <!--                                            android:layout_width="wrap_content"-->
+                    <!--                                            android:layout_height="wrap_content"-->
+                    <!--                                            android:background="@drawable/cancel"-->
+                    <!--                                            android:onClick="buttonClickEvent"-->
+                    <!--                                            android:textColor="@color/black"-->
+                    <!--                                            android:textSize="30sp"-->
+                    <!--                                            app:layout_constraintBottom_toBottomOf="parent"-->
+                    <!--                                            app:layout_constraintEnd_toEndOf="parent"-->
+                    <!--                                            app:layout_constraintStart_toStartOf="parent"-->
+                    <!--                                            app:layout_constraintTop_toTopOf="parent">-->
+
+                    <!--                                        </ImageView>-->
+                    <!--                                    </androidx.constraintlayout.widget.ConstraintLayout>-->
+                    <!--                                </LinearLayout>-->
+
+                    <!--                                <LinearLayout-->
+                    <!--                                    android:layout_width="match_parent"-->
+                    <!--                                    android:layout_height="0dp"-->
+                    <!--                                    android:layout_weight="1"-->
+                    <!--                                    android:orientation="horizontal"-->
+                    <!--                                    android:weightSum="2" />-->
+
+
+                    <!--                            </LinearLayout>-->
+
+                    <!--                        </androidx.constraintlayout.widget.ConstraintLayout>-->
+
+                    <LinearLayout
+                        android:gravity="bottom"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/nextContinue"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="30dp"
+                            android:layout_marginTop="30dp"
+                            android:layout_marginRight="30dp"
+                            android:backgroundTint="#1DBE84"
+                            android:paddingVertical="10dp"
+                            android:text="@string/conti"
+                            android:textSize="20sp"
+
+                            app:cornerRadius="10dp"></com.google.android.material.button.MaterialButton>
+
+                        <com.google.android.material.progressindicator.CircularProgressIndicator
+                            android:id="@+id/loader"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:elevation="100dp"
+                            android:indeterminate="true"
+                            android:visibility="gone"
+                            android:layout_gravity="center"
+                            app:indicatorColor="@color/white"
+                            app:indicatorDirectionCircular="clockwise"
+                            app:indicatorSize="40dp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:trackColor="@color/green"
+                            app:trackThickness="6dp"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="20dp"
+                            android:fontFamily="@font/plusjakartadisplaymedium"
+                            android:gravity="center"
+                            android:text="By giving your information, you agree to our"
+                            android:textColor="@color/gastos_Greyc" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="20dp"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:fontFamily="@font/plusjakartadisplaymedium"
+                                android:text="Terms &amp; Conditions"
+                                android:textColor="@color/black" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="5dp"
+                                android:fontFamily="@font/plusjakartadisplaymedium"
+                                android:text="and"
+                                android:textColor="@color/gastos_Greyc" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="5dp"
+                                android:fontFamily="@font/plusjakartadisplaymedium"
+                                android:text="Privacy Policy."
+                                android:textColor="@color/black" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <ImageView
+            android:id="@+id/imageView11"
+            android:layout_width="235dp"
+            android:layout_height="147dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_ellipse_1" />
+
+        <ImageView
+            android:id="@+id/imageView13"
+            android:layout_width="230dp"
+            android:layout_height="149dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_ellipse_2" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="@dimen/_40sdp"
+        android:layout_height="@dimen/_40sdp"
+        android:src="@drawable/img_gastos"
+        android:layout_marginStart="@dimen/_25sdp"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="@dimen/_25sdp"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <TextView
+        android:id="@+id/addressHeading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:fontFamily="@font/plusjakartadisplaymedium"
+        android:text="ABC Restaurant"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_12sdp"
+        app:layout_constraintBottom_toBottomOf="@+id/image"
+        app:layout_constraintStart_toEndOf="@id/image"
+        app:layout_constraintTop_toTopOf="@id/image"
+        app:layout_constraintVertical_bias="0.225" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/addressHeading"
+        android:text="M-31, Bhopal"
+        android:textSize="@dimen/_9sdp"
+        app:layout_constraintStart_toStartOf="@id/addressHeading"
+        android:fontFamily="@font/plusjakartatextregular"/>
+
+    <ImageView
+        android:id="@+id/location_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_location_icon"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="@dimen/_25sdp"
+        android:layout_marginEnd="@dimen/_15sdp"/>
+    <TextView
+        android:id="@+id/distance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="3.5 km"
+        app:layout_constraintEnd_toStartOf="@id/location_icon"
+        app:layout_constraintTop_toTopOf="@id/location_icon"
+        app:layout_constraintBottom_toBottomOf="@id/location_icon"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:textColor="@color/green"
+        android:textSize="@dimen/_10sdp"
+        android:fontFamily="@font/plusjakartatextregular"/>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/21.7.21/gastos/less pay/GastosUserApplication/app/src/main/res/drawable/bg_back.xml" value="0.1815" />
+        <entry key="..\:/21.7.21/gastos/less pay/GastosUserApplication/app/src/main/res/drawable/bg_ref_code.xml" value="0.1815" />
+        <entry key="..\:/21.7.21/gastos/less pay/GastosUserApplication/app/src/main/res/drawable/bg_rex.xml" value="0.1815" />
+        <entry key="..\:/21.7.21/gastos/less pay/GastosUserApplication/app/src/main/res/layout/apply_referral.xml" value="0.17255434782608695" />
+        <entry key="..\:/21.7.21/gastos/less pay/GastosUserApplication/app/src/main/res/layout/my_coins.xml" value="0.18" />
+        <entry key="..\:/21.7.21/gastos/less pay/GastosUserApplication/app/src/main/res/layout/rc_coins.xml" value="0.33" />
+        <entry key="..\:/21.7.21/gastos/less pay/GastosUserApplication/app/src/main/res/layout/refer_earn.xml" value="0.1963302752293578" />
+        <entry key="..\:/GastosUserApplication/app/src/main/res/layout/activity_about_gastos.xml" value="0.1838768115942029" />
+        <entry key="..\:/GastosUserApplication/app/src/main/res/layout/activity_grei_vance.xml" value="0.22780797101449277" />
+        <entry key="..\:/GastosUserApplication/app/src/main/res/layout/activity_inside_about_gastos.xml" value="0.22780797101449277" />
+        <entry key="..\:/GastosUserApplication/app/src/main/res/layout/activity_main.xml" value="0.22780797101449277" />
+        <entry key="..\:/GastosUserApplication/app/src/main/res/layout/activity_payment.xml" value="0.22780797101449277" />
+        <entry key="..\:/GastosUserApplication/app/src/main/res/layout/activity_privacy_policy.xml" value="0.22780797101449277" />
+        <entry key="..\:/GastosUserApplication/app/src/main/res/layout/activity_select_city.xml" value="0.4" />
+        <entry key="..\:/GastosUserApplication/app/src/main/res/layout/activity_terms_and_condition.xml" value="0.22780797101449277" />
+        <entry key="..\:/GastosUserApplication/app/src/main/res/layout/fragment_common_list.xml" value="0.1838768115942029" />
+        <entry key="..\:/GastosUserApplication/app/src/main/res/layout/fragment_market_place.xml" value="0.22780797101449277" />
+        <entry key="..\:/GastosUserApplication/app/src/main/res/layout/fragment_membership.xml" value="0.22780797101449277" />
+        <entry key="..\:/GastosUserApplication/app/src/main/res/layout/fragment_merchant_profile.xml" value="0.1838768115942029" />
+        <entry key="..\:/GastosUserApplication/app/src/main/res/layout/fragment_profile.xml" value="0.1838768115942029" />
+        <entry key="..\:/GastosUserApplication/app/src/main/res/layout/fragment_search_all_category.xml" value="0.22780797101449277" />
+        <entry key="..\:/GastosUserApplication/app/src/main/res/layout/new_home_page_layout.xml" value="0.22780797101449277" />
+        <entry key="..\:/GastosUserApplication/app/src/main/res/layout/not_found_data.xml" value="0.22780797101449277" />
+        <entry key="..\:/GastosUserApplication/app/src/main/res/layout/recommended_single_row.xml" value="0.22780797101449277" />
+        <entry key="..\:/GastosUserApplication/app/src/main/res/layout/recommended_single_rows.xml" value="0.136" />
+        <entry key="..\:/GastosUserApplication/app/src/main/res/layout/single_row_image.xml" value="0.22780797101449277" />
+        <entry key="..\:/GastosUserApplication/app/src/main/res/layout/single_row_search.xml" value="0.22780797101449277" />
+        <entry key="..\:/GastosUserApplication/app/src/main/res/layout/singlerow_popular.xml" value="0.22780797101449277" />
+        <entry key="..\:/GastosUserApplication/app/src/main/res/layout/stories_row.xml" value="0.22780797101449277" />
+        <entry key="..\:/backupDataGastos/GastosUserApp/GastosUserApp/app/src/main/res/layout/activity_home.xml" value="0.2" />
+        <entry key="..\:/backupDataGastos/GastosUserApp/GastosUserApp/app/src/main/res/layout/activity_payment.xml" value="0.25" />
+        <entry key="..\:/backupDataGastos/GastosUserApp/GastosUserApp/app/src/main/res/layout/card_market_place.xml" value="0.2" />
+        <entry key="..\:/backupDataGastos/GastosUserApp/GastosUserApp/app/src/main/res/layout/fragment_common_list.xml" value="0.2" />
+        <entry key="..\:/backupDataGastos/GastosUserApp/GastosUserApp/app/src/main/res/layout/fragment_market_place.xml" value="0.2" />
+        <entry key="..\:/backupDataGastos/GastosUserApp/GastosUserApp/app/src/main/res/layout/fragment_search_all_category.xml" value="0.2" />
+        <entry key="..\:/backupDataGastos/GastosUserApp/GastosUserApp/app/src/main/res/layout/new_home_page_layout.xml" value="0.2" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

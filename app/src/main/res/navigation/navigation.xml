@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.cu.crazypocket.Fragment.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/new_home_page_layout" >
+        <action
+            android:id="@+id/action_homeFragment_to_enFragment"
+            app:destination="@id/enFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/expensesFragment"
+        android:name="com.cu.crazypocket.Fragment.ExpensesFragment"
+        android:label="fragment_expenses"
+        tools:layout="@layout/fragment_expenses" />
+    <fragment
+        android:id="@+id/marketPlaceFragment"
+        android:name="com.cu.crazypocket.Fragment.MarketPlaceFragment"
+        android:label="fragment_market_place"
+        tools:layout="@layout/fragment_market_place" >
+        <action
+            android:id="@+id/action_marketPlaceFragment_to_commonListFragment"
+            app:destination="@id/commonListFragment" />
+        <action
+            android:id="@+id/action_marketPlaceFragment_to_merchantProfileFragment"
+            app:destination="@id/merchantProfileFragment" />
+        <action
+            android:id="@+id/action_marketPlaceFragment_to_homeFragment2"
+            app:destination="@id/homeFragment" />
+        <action
+            android:id="@+id/action_marketPlaceFragment_to_searchAllCategoryFragment"
+            app:destination="@id/searchAllCategoryFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.cu.crazypocket.Fragment.ProfileFragment"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" >
+        <action
+            android:id="@+id/action_profileFragment_to_membershipPlanFragment"
+            app:destination="@id/membershipPlanFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/membershipPlanFragment"
+        android:name="com.cu.crazypocket.Fragment.MembershipPlanFragment"
+        android:label="MembershipPlanFragment" >
+        <action
+            android:id="@+id/action_membershipPlanFragment_to_billingFragment"
+            app:destination="@id/billingFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/billingFragment"
+        android:name="com.cu.crazypocket.Fragment.BillingFragment"
+        android:label="fragment_billing"
+        tools:layout="@layout/fragment_billing" />
+    <fragment
+        android:id="@+id/commonListFragment"
+        android:name="com.cu.crazypocket.Fragment.CommonListFragment"
+        android:label="fragment_common_list"
+        tools:layout="@layout/fragment_common_list" >
+        <action
+            android:id="@+id/action_commonListFragment_to_marketPlaceFragment"
+            app:destination="@id/marketPlaceFragment" />
+        <action
+            android:id="@+id/action_commonListFragment_to_merchantProfileFragment"
+            app:destination="@id/merchantProfileFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/merchantProfileFragment"
+        android:name="com.cu.crazypocket.Fragment.MerchantProfileFragment"
+        android:label="MerchantProfileFragment" >
+        <action
+            android:id="@+id/action_merchantProfileFragment_to_commonListFragment"
+            app:destination="@id/commonListFragment" />
+        <action
+            android:id="@+id/action_merchantProfileFragment_to_marketPlaceFragment"
+            app:destination="@id/marketPlaceFragment" />
+        <action
+            android:id="@+id/action_merchantProfileFragment_to_mapFragment"
+            app:destination="@id/mapFragment" />
+    </fragment>
+    <dialog
+        android:id="@+id/enFragment"
+        android:name="com.cu.crazypocket.Fragment.EnFragment"
+        android:label="EnFragment" />
+    <activity
+        android:id="@+id/mapFragment"
+        android:name="com.cu.crazypocket.Fragment.MapFragment"
+        android:label="fragment_map"
+        tools:layout="@layout/fragment_map" />
+    <fragment
+        android:id="@+id/searchAllCategoryFragment"
+        android:name="com.cu.crazypocket.Fragment.SearchAllCategoryFragment"
+        android:label="SearchAllCategoryFragment" >
+        <action
+            android:id="@+id/action_searchAllCategoryFragment_to_marketPlaceFragment"
+            app:destination="@id/marketPlaceFragment" />
+        <action
+            android:id="@+id/action_searchAllCategoryFragment_to_merchantProfileFragment"
+            app:destination="@id/merchantProfileFragment" />
+    </fragment>
+</navigation>

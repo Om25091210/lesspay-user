@@ -1,0 +1,606 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".Fragment.ProfileFragment">
+
+        <TextView
+            android:id="@+id/profile_heading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:fontFamily="@font/plusjakartadisplaybold"
+            android:text="@string/profile"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_20sdp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/view_membership"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:text="@string/view_membership"
+            android:textColor="@color/gastos_Grey"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/profile_heading" />
+
+        <ScrollView
+            android:id="@+id/scrollView"
+            android:scrollbars="none"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="@dimen/_5sdp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/view_membership">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraintLayout"
+                android:layout_width="match_parent"
+                android:layout_height="0dp">
+
+
+                <com.google.android.material.card.MaterialCardView
+                    android:visibility="gone"
+                    android:id="@+id/material_card"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_20sdp"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:layout_marginEnd="@dimen/_20sdp"
+                    app:cardCornerRadius="@dimen/_15sdp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:strokeColor="@color/gastos_Grey"
+                    app:strokeWidth="@dimen/_1sdp">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        tools:layout_editor_absoluteX="217dp"
+                        tools:layout_editor_absoluteY="-9dp">
+
+                        <View
+                            android:id="@+id/background"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_65sdp"
+                            android:background="@color/darkestGreen"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/ic_mask_group"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <ImageView
+                            android:id="@+id/profile_image"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="-40dp"
+                            android:background="@drawable/circle"
+                            android:padding="@dimen/_10sdp"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/ic_user_octagon"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@id/background" />
+
+                        <TextView
+                            android:id="@+id/user_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_20sdp"
+                            android:fontFamily="@font/plusjakartadisplaybold"
+                            android:text="Ankit"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_18sdp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@id/profile_image" />
+
+                        <TextView
+                            android:id="@+id/number"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="12dp"
+                            android:fontFamily="@font/plusjakartatextregular"
+                            android:text="XXXXXX1234"
+                            android:textColor="@color/gastos_Grey"
+                            android:textSize="@dimen/_16sdp"
+                            app:layout_constraintEnd_toEndOf="@id/user_name"
+                            app:layout_constraintStart_toStartOf="@id/user_name"
+                            app:layout_constraintTop_toBottomOf="@id/user_name" />
+
+                        <TextView
+                            android:id="@+id/active"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="232dp"
+                            android:fontFamily="@font/plusjakartadisplaymedium"
+                            android:text="Active"
+                            android:textColor="@color/green"
+                            android:textSize="@dimen/_18sdp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.219"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:id="@+id/membership"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="264dp"
+                            android:fontFamily="@font/plusjakartatextregular"
+                            android:text="@string/membership"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.233"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:id="@+id/money"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_15sdp"
+                            android:fontFamily="@font/plusjakartadisplaymedium"
+                            android:text="₹12,928"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_18sdp"
+                            android:visibility="gone"
+                            app:layout_constraintEnd_toEndOf="@id/membership"
+                            app:layout_constraintStart_toStartOf="@id/membership"
+                            app:layout_constraintTop_toBottomOf="@id/membership" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/plusjakartatextregular"
+                            android:text="Savings"
+                            android:textColor="@color/gastos_Grey"
+                            android:visibility="gone"
+                            app:layout_constraintEnd_toEndOf="@id/money"
+                            app:layout_constraintStart_toStartOf="@id/money"
+                            app:layout_constraintTop_toBottomOf="@id/money" />
+
+                        <TextView
+                            android:id="@+id/days"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="240dp"
+                            android:fontFamily="@font/plusjakartadisplaymedium"
+                            android:text="1year"
+                            android:textColor="@color/black"
+                            android:textSize="15sp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.727"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:id="@+id/validity"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="264dp"
+                            android:fontFamily="@font/plusjakartatextregular"
+                            android:text="Validity"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.762"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:id="@+id/validity_days"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_15sdp"
+                            android:fontFamily="@font/plusjakartadisplaymedium"
+                            android:text="1292"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_18sdp"
+                            android:visibility="gone"
+                            app:layout_constraintEnd_toEndOf="@id/validity"
+                            app:layout_constraintStart_toStartOf="@id/validity"
+                            app:layout_constraintTop_toBottomOf="@id/validity" />
+
+                        <TextView
+                            android:id="@+id/coins_earned"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/plusjakartatextregular"
+                            android:text="Coins Earned"
+                            android:textColor="@color/gastos_Grey"
+                            android:visibility="gone"
+                            app:layout_constraintEnd_toEndOf="@id/validity_days"
+                            app:layout_constraintStart_toStartOf="@id/validity_days"
+                            app:layout_constraintTop_toBottomOf="@id/validity_days" />
+
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/renewMembership"
+                            android:layout_marginTop="100dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_25sdp"
+                            android:layout_marginEnd="@dimen/_25sdp"
+                            android:layout_marginBottom="@dimen/_25sdp"
+                            android:fontFamily="@font/plusjakartadisplaymedium"
+                            android:paddingVertical="@dimen/_15sdp"
+                            android:text="Activate Membership"
+                            android:textAllCaps="false"
+                            app:cornerRadius="@dimen/_10sdp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="1.0"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/number"
+                            app:layout_constraintVertical_bias="0.0" />
+
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </com.google.android.material.card.MaterialCardView>
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/card_view_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:cardCornerRadius="@dimen/_10sdp"
+                    android:layout_marginStart="@dimen/_20sdp"
+                    android:layout_marginTop="@dimen/_25sdp"
+                    android:layout_marginEnd="@dimen/_20sdp"
+                    app:strokeWidth="@dimen/_1sdp"
+                    app:strokeColor="@color/gastos_Grey"
+                    app:layout_constraintTop_toBottomOf="@id/material_card">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="@dimen/_15sdp">
+
+                        <ImageView
+                            android:id="@+id/chart"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_15sdp"
+                            android:layout_marginTop="@dimen/_25sdp"
+                            android:src="@drawable/ic_chart_square"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:id="@+id/expense"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_15sdp"
+                            android:fontFamily="@font/plusjakartadisplaymedium"
+                            android:text="Expense Tracker"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_12sdp"
+                            app:layout_constraintStart_toEndOf="@id/chart"
+                            app:layout_constraintTop_toTopOf="@id/chart" />
+
+                        <TextView
+                            android:id="@+id/track"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/plusjakartatextregular"
+                            android:text="Track Expenses"
+                            android:textSize="@dimen/_10sdp"
+                            app:layout_constraintStart_toStartOf="@id/expense"
+                            app:layout_constraintTop_toBottomOf="@id/expense" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintBottom_toBottomOf="@id/line"
+                            android:layout_marginEnd="@dimen/_15sdp"
+                            android:src="@drawable/ic_coolicon" />
+
+                        <View
+                            android:id="@+id/line"
+                            android:layout_width="0dp"
+                            android:layout_height="1dp"
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:background="@color/grey"
+                            app:layout_constraintStart_toStartOf="@id/track"
+                            app:layout_constraintTop_toBottomOf="@id/track" />
+
+                        <ImageView
+                            android:id="@+id/share"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_35sdp"
+                            android:src="@drawable/ic_share"
+                            android:layout_marginStart="@dimen/_15sdp"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/chart" />
+
+
+                        <TextView
+                            android:id="@+id/refer"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_15sdp"
+                            android:fontFamily="@font/plusjakartadisplaymedium"
+                            android:text="Refer &amp; Earn"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_12sdp"
+                            app:layout_constraintStart_toEndOf="@id/share"
+                            app:layout_constraintTop_toTopOf="@id/share" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toBottomOf="@id/line"
+                            app:layout_constraintBottom_toBottomOf="@id/line2"
+                            android:layout_marginEnd="@dimen/_15sdp"
+                            android:src="@drawable/ic_coolicon" />
+
+                        <TextView
+                            android:id="@+id/earn"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/plusjakartatextregular"
+                            android:text="Earn money through referrals"
+                            android:textSize="@dimen/_10sdp"
+                            app:layout_constraintStart_toStartOf="@id/refer"
+                            app:layout_constraintTop_toBottomOf="@id/refer" />
+
+                        <View
+                            android:id="@+id/line2"
+                            android:layout_width="0dp"
+                            android:layout_height="1dp"
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:background="@color/grey"
+                            app:layout_constraintStart_toStartOf="@id/earn"
+                            app:layout_constraintTop_toBottomOf="@id/earn" />
+
+                        <ImageView
+                            android:id="@+id/setting"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_15sdp"
+                            android:layout_marginTop="@dimen/_35sdp"
+                            android:src="@drawable/ic_setting"
+
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@id/share" />
+
+                        <TextView
+                            android:id="@+id/setting_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_15sdp"
+                            android:fontFamily="@font/plusjakartadisplaymedium"
+                            android:text="Settings"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_12sdp"
+                            app:layout_constraintStart_toEndOf="@id/setting"
+                            app:layout_constraintTop_toTopOf="@id/setting" />
+
+                        <TextView
+                            android:id="@+id/view_edit"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/plusjakartatextregular"
+                            android:text="View/Edit Settings"
+                            android:textSize="@dimen/_10sdp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintStart_toStartOf="@id/setting_text"
+                            app:layout_constraintTop_toBottomOf="@id/setting_text" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="20dp"
+                            android:src="@drawable/ic_coolicon"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toBottomOf="@id/line2"
+                            app:layout_constraintVertical_bias="0.604" />
+
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                </com.google.android.material.card.MaterialCardView>
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_25sdp"
+                    app:layout_constraintTop_toBottomOf="@id/card_view_2"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:strokeWidth="@dimen/_1sdp"
+                    app:strokeColor="@color/gastos_Grey"
+                    android:layout_marginStart="@dimen/_20sdp"
+                    app:cardCornerRadius="@dimen/_10sdp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    android:layout_marginBottom="@dimen/_25sdp"
+                    android:layout_marginEnd="@dimen/_20sdp">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="@dimen/_15sdp">
+
+                        <ImageView
+                            android:id="@+id/rate"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_15sdp"
+                            android:layout_marginTop="@dimen/_25sdp"
+                            android:src="@drawable/ic_star"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:id="@+id/rate_us"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_15sdp"
+                            android:fontFamily="@font/plusjakartadisplaymedium"
+                            android:text="Rate Us "
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_12sdp"
+                            app:layout_constraintStart_toEndOf="@id/rate"
+                            app:layout_constraintTop_toTopOf="@id/rate" />
+
+                        <TextView
+                            android:id="@+id/how_tagline"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/plusjakartatextregular"
+                            android:text="How did you like using the app"
+                            android:textSize="@dimen/_10sdp"
+                            app:layout_constraintStart_toStartOf="@id/rate_us"
+                            app:layout_constraintTop_toBottomOf="@id/rate_us" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="20dp"
+                            android:src="@drawable/ic_coolicon"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintBottom_toBottomOf="@id/m2_line" />
+
+                        <View
+                            android:id="@+id/m2_line"
+                            android:layout_width="0dp"
+                            android:layout_height="1dp"
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:background="@color/grey"
+                            app:layout_constraintStart_toStartOf="@id/how_tagline"
+                            app:layout_constraintTop_toBottomOf="@id/how_tagline" />
+
+                        <ImageView
+                            android:id="@+id/people"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_35sdp"
+                            android:src="@drawable/ic_people"
+                            android:layout_marginStart="@dimen/_15sdp"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/rate" />
+
+
+                        <TextView
+                            android:id="@+id/aboutUs"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_15sdp"
+                            android:fontFamily="@font/plusjakartadisplaymedium"
+                            android:text="About Gastos"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_12sdp"
+
+                            app:layout_constraintStart_toEndOf="@id/people"
+                            app:layout_constraintTop_toTopOf="@id/people" />
+
+                        <TextView
+                            android:id="@+id/view_edit_1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/plusjakartatextregular"
+                            android:text="View/Edit Settings"
+                            android:textSize="@dimen/_10sdp"
+                            app:layout_constraintStart_toStartOf="@id/aboutUs"
+                            app:layout_constraintTop_toBottomOf="@id/aboutUs" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="20dp"
+                            android:src="@drawable/ic_coolicon"
+                            app:layout_constraintTop_toBottomOf="@id/m2_line"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintBottom_toBottomOf="@id/mg_line2" />
+
+                        <View
+                            android:id="@+id/mg_line2"
+                            android:layout_width="0dp"
+                            android:layout_height="1dp"
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:background="@color/grey"
+                            app:layout_constraintStart_toStartOf="@id/view_edit_1"
+                            app:layout_constraintTop_toBottomOf="@id/view_edit_1" />
+
+
+                        <ImageView
+                            android:id="@+id/profile_people"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_15sdp"
+                            android:layout_marginTop="@dimen/_35sdp"
+                            android:src="@drawable/ic_profile"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@id/people" />
+
+                        <TextView
+                            android:id="@+id/help"
+                            android:layout_width="120dp"
+                            android:layout_height="18dp"
+                            android:layout_marginStart="@dimen/_15sdp"
+                            android:fontFamily="@font/plusjakartadisplaymedium"
+                            android:text="Help &amp; Support"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_12sdp"
+                            app:layout_constraintStart_toEndOf="@id/profile_people"
+                            app:layout_constraintTop_toTopOf="@id/profile_people" />
+
+                        <TextView
+                            android:id="@+id/making"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/plusjakartatextregular"
+                            android:text="Make grievance regarding an issue."
+                            android:textSize="@dimen/_10sdp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintTop_toBottomOf="@id/help"
+                            app:layout_constraintStart_toStartOf="@id/help" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="20dp"
+                            android:src="@drawable/ic_coolicon"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toBottomOf="@id/mg_line2"
+                            app:layout_constraintVertical_bias="0.604" />
+
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </com.google.android.material.card.MaterialCardView>
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        </ScrollView>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

@@ -1,0 +1,97 @@
+<resources>
+    <string name="app_name">Less Pay</string>
+    <string name="enterMob">Enter your mobile number to start using\nGastos App.</string>
+    <string name="enterMobNo">Enter your Mobile Number</string>
+    <string name="enterVerificationNo">Enter your Verification code</string>
+    <string name="proceed">Enter the OTP sent to your mobile number\n(983 3948 398) to proceed.</string>
+    <string name="conti">Continue</string>
+    <string name="firtsHalf">By giving your information, you agree to our </string>
+    <string name="secondHalf">Terms &amp; Conditions  </string>
+    <string name="thirdHalf"> Privacy Policy </string>
+    <string name="aboutUs"> About Gastos </string>
+    <string name="helpAndSupport">Help &amp; Support </string>
+    <string name="privacyPolicy">Privacy Policy</string>
+    <string name="Greivance_Redressal"> Greivance Redressal  </string>
+    <string name="openSource"> Open Source Licenses </string>
+    <string name="Greivances"> Greivances </string>
+    <string name="Submit"> submit </string>
+    <string name="Skip"> Skip </string>
+    <string name="enterInfo"> Enter your information to start using the\nGastos App </string>
+    <string name="EnterFullName"> Enter Your Full Name </string>
+    <string name="EnterYourEmail"> Enter Your E-Mail</string>
+    <string name="EnterYourDOB"> Enter your Date-Of-Birth to start using\nthe Gastos App</string>
+    <string name="EnterDOB"> Enter Date of Birth</string>
+    <string name="tandc"> Terms &amp; Conditions </string>
+    <string name="privacy_Policy"> Privacy Policy </string>
+    <string name="Greivance_Policy">Greivance Policy</string>
+    <string name="GuideGastosApp">Guide to Gastos App</string>
+    <string name="apiName">API Name</string>
+    <string name="helpDesk">Help desk for the Gastos App</string>
+    <string name="Membership">Membership</string>
+    <string name="reportIssue">Report an Issue</string>
+    <string name="okay">okay</string>
+    <string name="Report_an_Issue">Report an Issue</string>
+    <string name="faQ">Frequently Asked Questions</string>
+    <string name="hyperlink"><a href="https://learntodroid.com">https://learntodroid.com</a></string>
+    <string name="hyperlinkTwo"><a href="https://learntodroid.com">https://learntodroid.com</a></string>
+    <string name="writeAboutIssue">Write about the issue you are dealing with</string>
+    <string name="temp">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi ultrices orci lacus, eget malesuada orci maximus vitae. Suspendisse sed odio imperdiet, mollis lectus eu, ultrices nibh.</string>
+    <string name="tempText">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi ultrices orci lacus, eget malesuada orci maximus vitae. Suspendisse sed odio imperdiet, mollis lectus eu, ultrices nibh.
+
+ Nam nec tincidunt ex, in ultrices purus. Fusce at urna non est molestie ultrices. Nunc elementum tincidunt sagittis. Vestibulum ut nunc vehicula, eleifend libero sed, sagittis tellus.</string>
+    <string name="learnAboutUs"> Learn about Gastos and its policies. </string>
+    <string name="learnhowgastosWorks"> Learn how Gastos works. </string>
+    <string name="Your_reoportfiled">Your report has been filed! </string>
+    <string name="contact">A Gastos associate will contact you\nwithin 48 hours. </string>
+    <string name="helpdesk"> Help desk for the Gastos App </string>
+
+
+    <string name="onBoarding_1">Pay less, Save More 💸</string>
+    <string name="onBoarding_2">Earn with Every Payment 🪙</string>
+    <string name="onBoarding_3">Wide variety of payments 💰</string>
+    <string name="onBoarding_4">Manage your Expenses ⚡</string>
+    <string name="soon">Soon We Will Live With An Exciting Features ⚡</string>
+
+    <string name="content_msg">Pay less on each transaction \nyou make with our App.</string>
+
+    <string name="tagline">All information gathered is secure.</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+    <string name="market_place">Marketplace</string>
+    <string name="address">M-31,Delhi,NCR</string>
+    <string name="edit_search">Search for services</string>
+    <string name="tab_item_1">All</string>
+    <string name="gastos">Gastos</string>
+    <string name="membership">Membership</string>
+
+
+    //Profile
+
+
+    <string name="profile">Profile</string>
+    <string name="view_membership">View/Renew membership status</string>
+
+    <string name="edit_profile"><p>By giving your information, you agree to our \n <b>Terms &amp; Conditions </b> and <b>Privacy Policy</b>.</p></string>
+    <string name="cafe_Bistro">Cafe Bistro</string>
+    <string name="martketplace_Membership">Marketplace Membership</string>
+    <string name="manageQr">Manage\nQR</string>
+    <string name="posQr">POS\nQR</string>
+    <string name="image">image</string>
+    <string name="pWallet">Provider\nWallet</string>
+    <string name="settings">Settings\n</string>
+    <string name="dhamaka">Double Dhamaka Offer!</string>
+    <string name="avail">Avail best deal for your business to shine</string>
+    <string name="checkOut">Check Out!</string>
+    <string name="title_activity_pagination">PaginationActivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+
+</resources>
